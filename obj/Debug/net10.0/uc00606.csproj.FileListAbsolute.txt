@@ -1,0 +1,15 @@
+/home/ubuntu/dev/uc00606/bin/Debug/net10.0/uc00606
+/home/ubuntu/dev/uc00606/bin/Debug/net10.0/uc00606.deps.json
+/home/ubuntu/dev/uc00606/bin/Debug/net10.0/uc00606.runtimeconfig.json
+/home/ubuntu/dev/uc00606/bin/Debug/net10.0/uc00606.dll
+/home/ubuntu/dev/uc00606/bin/Debug/net10.0/uc00606.pdb
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.AssemblyInfoInputs.cache
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.AssemblyInfo.cs
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.csproj.CoreCompileInputs.cache
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.sourcelink.json
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.dll
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/refint/uc00606.dll
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.pdb
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/uc00606.genruntimeconfig.cache
+/home/ubuntu/dev/uc00606/obj/Debug/net10.0/ref/uc00606.dll

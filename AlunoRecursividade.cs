@@ -13,62 +13,43 @@ namespace ExerciciosAula02B;
       Console.WriteLine("\n\n  EXERCÍCIO 5: Factorial Simulado (Recursivo)");
       Console.WriteLine("==================================\n");
 
-      Console.WriteLine("Insira um numero para calcular o factorial: \n");
+      Console.WriteLine("Insira um numero inteiro positivo para calcular o factorial: \n");
 
       int num = Convert.ToInt32(Console.ReadLine());
 
-      
-
-    }
-
-public int factorial(int n)
-    {
-       if (n == 0 || n == 1)
+      if (num < 0)
         {
-            return 1;
-
-        }else if (n < 0)
-        {
-          Console.WriteLine("Insira um numero positivo")  ;
+            Console.WriteLine(" Erro: Não é possível calcular factorial de número negativo!\n");
         }
 
         else
+
         {
-            return n * factorial(n-1);
-            
+         int resultado = CalculaFactorial(num);
+
+         Console.WriteLine("Factorial de:  " + num + " = " + resultado);
+         
         }
+         Console.WriteLine();
+
+
+
+      Console.WriteLine("==================================\n");
+      Console.WriteLine("\n\n EXERCÍCIO 3:Sequência de Fibonacci (Recursivo)");
+      Console.WriteLine("==================================\n");
+
 
     }
 
-
-  }
-/*
-
-   public int CalculateFactorial(int n) {
-         if (n == 1)
+    
+/////////method///////////
+   public int CalculaFactorial(int n) {
+         if (n == 1 || n ==0)
             return 1;
          else
-            return n * CalculateFactorial(n - 1);
+            return n * CalculaFactorial(n - 1);
       }
-      static void Main(string[] args) {
-         int value = 5;
-         int ret;
-         Factorial fact = new Factorial();
-         ret = fact.CalculateFactorial(value);
-         Console.WriteLine("Factorial of " + value + " = " + ret);
 
+  }
 
-
-*/
-
-
-  /*def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
-
-# Example usage
-result = factorial(5)
-print(result)  # Output: 120 */
 
