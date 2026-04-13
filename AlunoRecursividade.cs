@@ -99,7 +99,7 @@ namespace ExerciciosAula02B;
       }
 
   public int Fibonnaci(int n) {
-         if (n == 1 || n ==0)
+         if (n == 1 || n == 0)
             return 1;
          else
             return n * Fibonnaci(n - 1);
@@ -126,7 +126,7 @@ namespace ExerciciosAula02B;
       /// 
       /// 
 // Helper recursive function to check palindrome
-/*bool isPalindromeRec(string& s, int left, int right) {
+public  bool isPalindromeRec(string s, int left, int right) {
     
     // Base case
     if (left >= right) 
@@ -140,10 +140,10 @@ namespace ExerciciosAula02B;
     return isPalindromeRec(s, left + 1, right - 1);
 }
 
-bool isPalindrome(string& s) {
-    return isPalindromeRec(s, 0, s.size() - 1);
+/*bool isPalindrome(string& s) {
+    return isPalindromeRec(s, 0, s.size() - 1);*/
 }
-
+/*
 int main() {
     string s = "abba";
     
@@ -158,6 +158,6 @@ int main() {
 }*/
 
 
-  }
+  
 
 
