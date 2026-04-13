@@ -102,11 +102,12 @@ namespace ExerciciosAula02B;
          if (n == 1 || n == 0)
             return 1;
          else
-            return n * Fibonnaci(n - 1);
+            //return n * Fibonnaci(n - 1);
+            return (Fibonnaci(n - 2) + Fibonnaci(n- 1));
       }
 
-      /* 
-      public static int Fibonatchi(int position) {
+      
+public static int Fibonatchi(int position) {
 
     if(position == 0) {
         return 1;
@@ -119,43 +120,29 @@ namespace ExerciciosAula02B;
 }
       
       
-      */
-
-      /////////////////////////////////////////////////
-      /// 
-      /// 
-      /// 
-// Helper recursive function to check palindrome
-public  bool isPalindromeRec(string s, int left, int right) {
+   
+public bool Palindrome(string str, int lft, int rgt) {
     
     // Base case
-    if (left >= right) 
+    if (lft >= rgt) {
         return true;
-    
+    }
     // If mismatch found
-    if (s[left] != s[right]) 
-        return false;
+    else if (str[lft] != str[rgt]) {
+        //return false;
 
     // Recursive call with narrowed range
-    return isPalindromeRec(s, left + 1, right - 1);
-}
-
-/*bool isPalindrome(string& s) {
-    return isPalindromeRec(s, 0, s.size() - 1);*/
-}
-/*
-int main() {
-    string s = "abba";
+    return Palindrome(str, lft + 1, rgt - 1);
     
-    if (isPalindrome(s)) {
-        cout << "true" << endl;
     }
-    else {
-        cout << "false" << endl;
-    }
+}
+  }
 
-    return 0;
-}*/
+
+
+
+
+
 
 
   
