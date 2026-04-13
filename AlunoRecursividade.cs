@@ -1,3 +1,5 @@
+using System.IO.Pipelines;
+
 namespace ExerciciosAula02B;
   public class AlunoRecursividade
   {
@@ -38,7 +40,7 @@ namespace ExerciciosAula02B;
       Console.WriteLine("\n\n EXERCÍCIO 3:Sequência de Fibonacci (Recursivo)");
       Console.WriteLine("==================================\n");
 
-      int [] seq = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
+   
 
       Console.WriteLine("Insira o numero da posiçao na sequencia pretendida: \n");
 
@@ -63,80 +65,67 @@ namespace ExerciciosAula02B;
       Console.WriteLine("\n\n EXERCÍCIO 4: Verificador de Palíndromo (Recursivo)");
       Console.WriteLine("==================================\n");
 
-      Console.WriteLine("Insira uma palavra ou frase para verificar se palidromo: \n");
+      Console.WriteLine("Insira uma palavra ou frase para verificar se palindromo: \n");
 
-            string name = Console.ReadLine();
+            string str = Console.ReadLine();
 
-            string reverse = string.Empty;
+            //string rev = string.Empty;
             
-            for (int i = name.Length - 1; i >= 0; i--)
+        /*for (int i = str.Length - 1; i >= 0; i--)
             {
-                reverse += name[i];
+                rev += str[i];
             }
             
-            if (name == reverse)
+            if (str == rev)
             {
-                Console.WriteLine($"{name} is Palindrome.");
+                Console.WriteLine($"{str}  Palindromo.");
             }
             else
             {
-                Console.WriteLine($"{name} is not Palindrome");
+                Console.WriteLine($"{str} Nao Palindromo");
             }
-            Console.ReadKey();
+            Console.WriteLine();*/
+
+            
+
+
         }
 
 
 
     
-
-    
 /////////method///////////
-   public int CalculaFactorial(int n) {
-         if (n == 1 || n ==0)
+   public int CalculaFactorial(int num) {
+         if (num == 1 || num ==0)
             return 1;
          else
-            return n * CalculaFactorial(n - 1);
+            return num * CalculaFactorial(num - 1);
       }
 
-  public int Fibonnaci(int n) {
-         if (n == 1 || n == 0)
+  public int Fibonnaci(int num) {
+         if (num == 1 || num == 0)
             return 1;
          else
-            //return n * Fibonnaci(n - 1);
-            return (Fibonnaci(n - 2) + Fibonnaci(n- 1));
+            return (Fibonnaci(num - 2) + Fibonnaci(num- 1));
       }
 
-      
-public static int Fibonatchi(int position) {
 
-    if(position == 0) {
-        return 1;
-    }
-    if(position == 1) {
-        return 1;
-    } else {
-        return Fibonatchi(position - 2) + Fibonatchi(position - 1);
-    }
-}
-      
-      
    
-public bool Palindrome(string str, int lft, int rgt) {
+public bool Palindromo(string str, int lft, int rgt) {
     
-    // Base case
     if (lft >= rgt) {
         return true;
     }
-    // If mismatch found
+    
     else if (str[lft] != str[rgt]) {
-        //return false;
+        return false;}
 
-    // Recursive call with narrowed range
-    return Palindrome(str, lft + 1, rgt - 1);
+
+    return Palindromo(str, lft + 1, rgt - 1);
     
     }
 }
-  }
+  
 
 
 
