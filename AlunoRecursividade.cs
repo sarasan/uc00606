@@ -1,4 +1,3 @@
-using System.IO.Pipelines;
 
 namespace ExerciciosAula02B;
   public class AlunoRecursividade
@@ -69,7 +68,7 @@ namespace ExerciciosAula02B;
 
     string str;
 
-    Console.WriteLine("Insira uma palavra ou frase para verificar se palindromo: \n");
+    Console.WriteLine("Insira uma palavra ou frase para verificar se e palindromo: \n");
 
     str = Console.ReadLine();
 
@@ -87,7 +86,6 @@ namespace ExerciciosAula02B;
     }
 
      
-
 /////////methods///////////
    public int CalculaFactorial(int num) {
          if (num == 1 || num ==0)
@@ -103,7 +101,6 @@ namespace ExerciciosAula02B;
             return (Fibonnaci(num - 2) + Fibonnaci(num- 1));
       }
 
-
    
 public static bool Palindromo(string str) {
 
@@ -112,9 +109,7 @@ public static bool Palindromo(string str) {
         {
            return true; 
         }
-        else
-        {
-            if (str[0] != str[str.Length - 1])
+        else if (str[0] != str[str.Length - 1])
             {
                 return false;
             }
@@ -125,7 +120,7 @@ public static bool Palindromo(string str) {
         }
     
     }
-}
+
   
 
 
