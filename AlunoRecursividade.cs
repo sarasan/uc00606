@@ -61,40 +61,34 @@ namespace ExerciciosAula02B;
          Console.WriteLine();
 
 /////////////////////////////
-      Console.WriteLine("==================================\n");
-      Console.WriteLine("\n\n EXERCÍCIO 4: Verificador de Palíndromo (Recursivo)");
-      Console.WriteLine("==================================\n");
+    Console.WriteLine("==================================\n");
+    Console.WriteLine("\n\n EXERCÍCIO 4: Verificador de Palíndromo (Recursivo)");
+    Console.WriteLine("==================================\n");
 
-      Console.WriteLine("Insira uma palavra ou frase para verificar se palindromo: \n");
+    bool pld;
 
-            string str = Console.ReadLine();
+    string str;
 
-            //string rev = string.Empty;
-            
-        /*for (int i = str.Length - 1; i >= 0; i--)
-            {
-                rev += str[i];
-            }
-            
-            if (str == rev)
-            {
-                Console.WriteLine($"{str}  Palindromo.");
-            }
-            else
-            {
-                Console.WriteLine($"{str} Nao Palindromo");
-            }
-            Console.WriteLine();*/
+    Console.WriteLine("Insira uma palavra ou frase para verificar se palindromo: \n");
 
-            
+    str = Console.ReadLine();
 
+    pld = Palindromo(str);
 
+    if (pld == true)
+        {
+        Console.WriteLine($"{str}  Palindromo.\n");
         }
+    else
+        {
+        Console.WriteLine($"{str} Nao e Palindromo.\n");
+        }
+        Console.WriteLine();
+    }
 
+     
 
-
-    
-/////////method///////////
+/////////methods///////////
    public int CalculaFactorial(int num) {
          if (num == 1 || num ==0)
             return 1;
@@ -111,20 +105,31 @@ namespace ExerciciosAula02B;
 
 
    
-public bool Palindromo(string str, int lft, int rgt) {
-    
-    if (lft >= rgt) {
-        return true;
-    }
-    
-    else if (str[lft] != str[rgt]) {
-        return false;}
+public static bool Palindromo(string str) {
 
-
-    return Palindromo(str, lft + 1, rgt - 1);
+    
+    if(str.Length <= 1)
+        {
+           return true; 
+        }
+        else
+        {
+            if (str[0] != str[str.Length - 1])
+            {
+                return false;
+            }
+            else
+            {
+                return Palindromo(str.Substring(1, str.Length -2));
+            }
+        }
     
     }
 }
+  
+
+
+
   
 
 
